@@ -2,12 +2,11 @@ import api from "../../api";
 
 const actions = {
   //Service to fetch image
-  async fetchUnsplashPhotos({ rootState }, { bearerToken, client_id }) {
+  async fetchUnsplashPhotos({ rootState }, { client_id }) {
     const unsplashPhotosResponse = await api.getPhotos(
-      rootState.$appConfig,
-      { bearerToken, client_id }
+      rootState.$baseURI,
+      { client_id }
     );
-    console.log(unsplashPhotosResponse);
     return unsplashPhotosResponse;
   }
 };

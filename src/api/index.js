@@ -5,7 +5,7 @@ import axios from "axios";
 
 export default {
   // get photos
-  getPhotos(baseURL, { bearerToken, client_id }) {
+  getPhotos(baseURL, { client_id }) {
     return axios.get(`${baseURL}photos/?client_id=${client_id}`);
   },
 };
