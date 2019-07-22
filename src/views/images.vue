@@ -10,7 +10,17 @@
 
   <!-- Photo Grid -->
   <div class="row"> 
-      
+      <section id="photos">
+          <img src="https://www.w3schools.com/w3images/wedding.jpg" >
+          <img src="https://www.w3schools.com/w3images/underwater.jpg" >
+          <img src="https://www.w3schools.com/w3images/wedding.jpg" >
+          <img src="https://www.w3schools.com/w3images/underwater.jpg" >
+          <img src="https://www.w3schools.com/w3images/wedding.jpg" >
+          <img src="https://www.w3schools.com/w3images/wedding.jpg" >
+          <img src="https://www.w3schools.com/w3images/underwater.jpg" >
+          <img src="https://www.w3schools.com/w3images/wedding.jpg" >
+          <img src="https://www.w3schools.com/w3images/wedding.jpg" >
+      </section>
 
   </div>
   </div>

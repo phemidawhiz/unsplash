@@ -15,8 +15,10 @@ export default new Vuex.Store({
   },
 
   state: {
-    //$appConfig: process.env.VUE_APP_BASE_URI,
+    $baseURI: process.env.VUE_BASE_URI,
+    $cliend_id: process.env.VUE_ACCESS_KEY
   },
+  
   actions: {
     
   },

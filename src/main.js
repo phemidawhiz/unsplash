@@ -15,7 +15,8 @@ Vue.prototype.$axios = axios;
 
 // All configurations as strings
 
-//Vue.prototype.$appConfig = process.env.VUE_APP_BASE_URI;
+Vue.prototype.$baseURI = process.env.VUE_BASE_URI;
+Vue.prototype.$cliend_id = process.env.VUE_ACCESS_KEY;
 
 new Vue({
   router,

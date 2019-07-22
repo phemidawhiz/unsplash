@@ -1,29 +1,18 @@
 import api from "../../api";
 
-const state = {
-  user: {
-    token: ""
-  }
-};
-
-const getters = {
-  getDetails(newState) {
-    return newState.user;
-  }
-};
-
-const mutations = {
-  
-};
-
 const actions = {
-  
+  //Service to fetch image
+  async fetchUnsplashPhotos({ rootState }, { bearerToken, client_id }) {
+    const unsplashPhotosResponse = await api.getPhotos(
+      rootState.$appConfig,
+      { bearerToken, client_id }
+    );
+    console.log(unsplashPhotosResponse);
+    return unsplashPhotosResponse;
+  }
 };
 
 export default {
   namespaced: true,
-  state,
-  getters,
-  mutations,
   actions
 };
